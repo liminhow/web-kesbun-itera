@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Firebase Web App</title>
+
+    <!-- Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Firebase Configuration and Initialization -->
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCSkMMc-q6YkWim1QYja485hOApLoAsTIc",
+        authDomain: "web-pwiot.firebaseapp.com",
+        databaseURL: "https://web-pwiot-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "web-pwiot",
+        storageBucket: "web-pwiot.appspot.com",
+        messagingSenderId: "657291171895",
+        appId: "1:657291171895:web:a2647ba18c74d264d587b2"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database();
+    </script>
+
+    <!-- Link to the JavaScript file -->
+    <script src="Aplikasi.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="WhatsApp_Image_2024-05-11_at_23.12.57_0ff361c4-removebg-preview.png" style="width: 100px;">
+        <h1>Sistem Monitoring Kelembapan dan pH Tanah Kebun Labu Itera <br> Secara Realtime Melalui Halaman Website</h1>
+        <p class="subtitle"> Menggunakan Sensor pH dan Kelembapan </p>
+        <div class="data-display">
+            <p>Moisture Level: <span id="moisture-level">Loading...</span>%</p>
+            
+            <p>pH Value: <span id="ph-value">Loading...</span></p>
+        </div>
+    </div>
+</body>
+</html>
+

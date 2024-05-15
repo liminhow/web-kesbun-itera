@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('WhatsApp\ Image\ 2024-05-15\ at\ 05.55.54_e1316b38.jpg') no-repeat center center fixed; /* Add your background image here */
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.data-display {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.data-box {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+}
+
+.data-box p {
+    font-size: 18px;
+    margin: 0;
+}
+
+#moisture-level, #ph-value {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
